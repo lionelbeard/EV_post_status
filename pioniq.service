@@ -1,0 +1,12 @@
+[Unit]
+Description=Get car status and send them
+After=network-online.target bluetooth.target dhcpcd.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=no
+User=pi
+ExecStart=/home/pi/EV_post_status/ioniq_main.sh
+
+[Install]
+WantedBy=multi-user.target

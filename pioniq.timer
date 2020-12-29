@@ -1,0 +1,8 @@
+[Unit]
+Description=Run pioniq every 5min
+
+[Timer]
+OnUnitActiveSec=5m 
+
+[Install]
+WantedBy=timers.target
