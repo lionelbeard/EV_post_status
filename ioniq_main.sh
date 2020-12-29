@@ -4,7 +4,7 @@
 SOC=`python /home/pi/EV_post_status/ioniq_soc.py`
 
 # Sync RTC time
-hwclock -s
+sudo hwclock -s
 
 DATE=`date`
 
